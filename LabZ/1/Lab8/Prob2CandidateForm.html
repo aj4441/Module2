@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Candidate Details</title>
+<style type="text/css">
+td {
+	border: 2px solid;
+}
+</style>
+</head>
+<body>
+	<form action="success.html">
+		<table border="2" style="background-color: lightblue">
+			<caption>
+				<h1>Candidate Information</h1>
+			</caption>
+			<thead>
+
+				<tr>
+					<td>Name*:</td>
+					<td><input type="char" maxlength="15"
+						pattern="[A-Z]{1}[a-z]{2,}]" required></td>
+				</tr>
+				<tr>
+					<td>Password*:</td>
+					<td><input type="password" maxlength="15" required></td>
+				<tr>
+				<tr>
+					<td>Phone number:*</td>
+					<td><input type="number" maxlength="10" required></td>
+				</tr>
+				<tr>
+					<td>Gender:*</td>
+					<td><input type="radio">Male <input type="radio">Female</td>
+				</tr>
+				<tr>
+					<td>Date Of Birth:*</td>
+					<td><input id="date" name="date" type="date" min="1997-05-16"
+						max="2019-03-15" value="" required></td>
+				</tr>
+				<tr>
+					<td>Email:*</td>
+					<td><input type="email" title="abc@com" required></td>
+				</tr>
+				<tr>
+					<td>Highest Qualification:*</td>
+					<td><input list="Qualification" name="con"
+						placeholder="Select Highest Qualification" style="width: 60%"
+						required> <datalist id="Qualification">
+							<option value="B.Tech">
+							<option value="M.Tech">
+							<option value="MBA">
+							<option value="MCA">
+							<option value="MSc">
+							<option value="MA">
+							<option value="BSC">
+						</datalist></td>
+
+
+				</tr>
+				<tr>
+					<td>Courses Interested in:*</td>
+					<td><input type="checkbox" name="Java">Java <input
+						type="checkbox" name="HTML5">HTML5 <input type="checkbox"
+						name="CSS3">CSS3 <input type="checkbox" name="Angular JS">Angular
+						JS</td>
+				</tr>
+				<tr>
+					<td>Comments(Mention External Certifications if any)</td>
+					<td><textarea rows="4" cols="40"></textarea></td>
+				</tr>
+				<tr>
+					<td>Upload Degree/External Certificates:*</td>
+					<td><input type="file" name="img" multiple>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button>Submit Information</button>&nbsp;&nbsp;
+						<button>Clear</button></td>
+				</tr>
+
+
+
+			</thead>
+
+		</table>
+	</form>
+</body>
+</html>
